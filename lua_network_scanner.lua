@@ -281,7 +281,7 @@ local function parseWifiList(output)
                     break
                 end
             end
-
+            --you can change the signal strength value here
             if signal_value and tonumber(splitRow[signal_value]) and tonumber(splitRow[signal_value]) > 92 then
                 table.insert(wifiList, splitRow)
             end
