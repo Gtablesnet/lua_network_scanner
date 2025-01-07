@@ -385,5 +385,5 @@ end
 
 while true do
     main()
-    os.execute("sleep 2")  -- Sleep for 10 seconds before running again
+    os.execute("sleep 2")  -- Sleep for 2 seconds before running again
 end
