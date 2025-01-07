@@ -148,7 +148,7 @@ end
 local function main()
     local filename = "wifi_coords.txt"
     local existingData = loadExistingData(filename)
-    local commandOutput = executeCommand("nmcli dev wifi list")
+    local commandOutput = executeCommand("nmcli dev wifi list ifname wlan0")
     local filteredArray = parseWifiList(commandOutput)
 
     -- Check if filteredArray is valid and has elements
