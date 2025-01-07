@@ -172,7 +172,7 @@ local function main()
 
         -- If SSID is new, get GPS coordinates and add it to existing data
         if not alreadyExists then
-            local gps_coords = get_gps_coordinates(5)
+            local gps_coords = get_gps_coordinates(1)
             if gps_coords.error then
                 table.insert(row, "Error: " .. gps_coords.error)
             else
